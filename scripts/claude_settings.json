@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.config/agterm-win/claude_hook.sh \"Claude finished\""
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.config/agterm-win/claude_hook.sh \"$CLAUDE_NOTIFICATION_MESSAGE\""
+          }
+        ]
+      }
+    ]
+  }
+}
